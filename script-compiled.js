@@ -12,8 +12,6 @@ var Stopwatch = function () {
         this.display = display;
         this.reset();
         this.print(this.times);
-        this.start();
-        this.stop();
     }
 
     _createClass(Stopwatch, [{
