@@ -74,6 +74,6 @@ const stopwatch = new Stopwatch(document.querySelector('.stopwatch'));
 
 
 var startButton = document.getElementById('start');
-startButton.addEventListener('click', stopwatch.start);
+startButton.addEventListener('click',()=> stopwatch.start());
 var stopButton = document.getElementById('stop');
-stopButton.addEventListener('click', stopwatch.stop);
+stopButton.addEventListener('click', ()=> stopwatch.stop());
