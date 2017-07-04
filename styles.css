@@ -1,0 +1,40 @@
+body{
+    text-align:center;
+    font-size: 36px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius:10px;
+    color: #000;
+    /*margin:10%;*/
+    padding: 10%;
+    text-transform: uppercase;
+
+
+}
+#start{
+    background-color: rgba(1,151,171,1);
+
+    border-color: rgba(0,63,71,.2);
+}
+#stop{
+    background-color: rgba(239,57,50,1);
+
+    border-color: rgba(133,32,28,.2);
+}
+#stop:hover, #start:hover{
+    color:#fff;
+    opacity: 0.9;
+}
+.stopwatch{
+    margin: 10% auto;
+    font-size: 2em;
+    background-color: rgba(252,227,1,1);
+    border-color: rgba(153,38,0,.2);
+}
