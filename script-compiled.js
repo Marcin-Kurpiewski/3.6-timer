@@ -17,6 +17,7 @@ var Stopwatch = function () {
     _createClass(Stopwatch, [{
         key: 'reset',
         value: function reset() {
+
             this.times = {
                 minutes: 0,
                 seconds: 0,
@@ -80,6 +81,17 @@ var Stopwatch = function () {
             this.running = false;
             clearInterval(this.watch);
         }
+    }, {
+        key: 'add',
+        value: function add() {
+            var newEl = document.createElement('li'),
+                newText = this.display.innerText = this.format(this.times),
+                addEl = document.getElementsByClassName('result');
+
+            newEl.appendChild(newText), addEl.appendChild(newEl);
+
+            return addEl;
+        }
     }]);
 
     return Stopwatch;
@@ -94,4 +106,12 @@ startButton.addEventListener('click', function () {
 var stopButton = document.getElementById('stop');
 stopButton.addEventListener('click', function () {
     return stopwatch.stop();
+});
+var resetButton = document.getElementById('reset');
+resetButton.addEventListener('click', function () {
+    return stopwatch.reset();
+});
+var addButton = document.getElementById('add');
+addButton.addEventListener('click', function () {
+    return stopwatch.add();
 });
