@@ -81,17 +81,6 @@ var Stopwatch = function () {
             this.running = false;
             clearInterval(this.watch);
         }
-    }, {
-        key: 'add',
-        value: function add() {
-            var newEl = document.createElement('li'),
-                newText = this.display.innerText = this.format(this.times),
-                addEl = document.getElementsByClassName('result');
-
-            newEl.appendChild(newText), addEl.appendChild(newEl);
-
-            return addEl;
-        }
     }]);
 
     return Stopwatch;

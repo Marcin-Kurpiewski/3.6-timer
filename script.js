@@ -3,7 +3,7 @@ class Stopwatch {
         this.running = false;
         this.display = display;
         this.reset();
-        this.print(this.times);
+        this.print();
 
     }
 
@@ -14,7 +14,7 @@ class Stopwatch {
             seconds: 0,
             miliseconds: 0
         };
-
+        this.print();
     }
 
     print() {
